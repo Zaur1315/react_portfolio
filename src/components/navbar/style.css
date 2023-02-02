@@ -1,0 +1,127 @@
+.nav{
+    letter-spacing: normal;
+    background-color: var(--dark-bg);
+    color: var(--header-text);
+    padding: 20px 0;
+    border-bottom: 1px solid var(--dark-border);
+}
+
+
+.nav-row{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    flex-wrap:wrap;
+}
+
+.logo{
+    color: var(--header-text);
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    margin-right: auto;
+}
+
+.logo strong{
+    font-weight: 700;
+}
+
+
+.nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap:40px;
+    row-gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-list__link{
+    position: relative;
+    color:var(--header-text);
+    transition: opacity 200ms ease-in;
+}
+
+
+.nav-list__link:hover{
+    opacity: 0.8;
+}
+
+
+
+.nav-list__link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: var(--underline);
+    transition: all 200ms;
+}
+
+.nav-list__link:hover::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--underline);
+}
+
+.nav-list__link--active:hover{
+    opacity: 1;
+    cursor: default;
+}
+
+.nav-list__link--active::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--underline);
+    cursor: default;
+}
+
+.dark-mode-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 51px;
+    height: 26px;
+    border-radius: 50px;
+    background-color: #272727;
+    padding: 5px;
+    position: relative;
+    order: 9;
+}
+
+.dark-mode-btn::before{
+    top:1px;
+    left: 1px;
+    position: absolute;
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius:50%;
+    background-color: #fff;
+    transition: all 200ms ease-in;
+}
+
+.dark-mode-btn__icon{
+    position: relative;
+    z-index: 9;
+}
+
+.dark-mode-btn--active::before{
+    left: 26px;
+}
