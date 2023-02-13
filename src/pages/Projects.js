@@ -18,6 +18,7 @@ const Projects = () => {
                         key={i}
                         img={a.img}
                         title={a.title}
+                        index={i}
                     />
                 })}
 

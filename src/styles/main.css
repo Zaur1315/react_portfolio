@@ -94,7 +94,7 @@ html, body {
     height: 48px;
     padding: 12px 28px;
     border-radius: 5px;
-    background-color: var(--accent);
+    background-color: var(--accentheader__title);
     color: var(--white);
     letter-spacing: 0.15px;
     font-size: 16px;
@@ -112,27 +112,7 @@ html, body {
 }
 
 
-.btn-outline{
-    height: 48px;
-    border-radius: 5px;
-    padding: 12px 20px;
-    border: 1px solid #000;
-    color:#000;
-    display:flex;
-    column-gap:10px;
-    align-items:center;
-    background-color: #fff;
 
-}
-
-.btn-outline:hover{
-    opacity: 0.7;
-}
-
-.btn-outline:active{
-    position: relative;
-    top: 1px;
-}
 
 
 .header__wrapper{
@@ -285,9 +265,6 @@ html, body {
         justify-content: space-between;
     }
 
-    .dark-mode-btn{
-        order: 0;
-    }
 
     .header{
         min-height: unset;
